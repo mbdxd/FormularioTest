@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <div class="campo">
+        <h1 id="titulo">Quais seus animes preferidos?</h1>
+        <p id="subtitulo">Complete as informações</p>
+        <br>
+    </div>
+
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome" class="nome"><strong>Nome</strong></label>
+                <input type="text" name="Nome" id="Nome" required>
+            </div>
+
+            <div class="campo">
+                <labe for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        
+        <div class="campo">
+            <label for="email"><strong>Email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="campo">
+          <br> <br> <label><strong>Você tem acesso ao conteúdo frequentemente?</strong></label>
+            <label>
+                    <input type="radio" name="acesso" value="Frequentemente" checked>Assisto e leio frequentemente <br>
+            </label>
+            <label>
+                <input type="radio" name="acesso" value="Moderadamente">Assisto e leio moderadamente<br>
+            </label>
+            <label>
+                <input type="radio" name="acesso" value="Raramente">Assisto e leio raramente<br>
+            </label>
+        </div>
+
+        <div class="campo">
+            <label for="estatistica"><strong>Estatística social:</strong></label>
+            <select id="Estatistica">
+            <option selected disabled value=""><b>Selecione</b></option>    
+            <option>One Piece</option>
+            <option>Attack on Titan</option>
+            <option>Demon Slayer</option>
+            <option>Death Note</option>
+            <option>Naruto Shippuden</option>
+            <option>My Hero Academia</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+            <div id="check">
+                <label><strong>Selecione a forma que se enquandra melhor:</strong></label><br><br>
+                <input type="checkbox" id="form1" name="form1" value="começando">
+                <label form="form1">Estou começando</label><br>
+
+                <input type="checkbox" id="form2" name="form2" value="metade">
+                <label form="form2">Já estou na metade</label><br>
+
+                <input type="checkbox" id="form3" name="form3" value="final">
+                <label form="form3">Já finalizei</label><br>
+
+                <input type="checkbox" id="form4" name="form4" value="dropei">
+                <label form="form4">Dropei, não gostei</label><br>
+            </div>
+        </fieldset>
+
+        <div class="campo">
+            <br>
+            <label><strong>Conte um pouco sobre o anime e o que você achou:</strong></label>
+            <textarea row="6" style="width: 26em" id="achou" name="achou"></textarea>
+        </div>
+
+        <button type="submit" class="botao"><strong>Concluído</strong></button>
+    </form>
+
+</body>
+</html>
